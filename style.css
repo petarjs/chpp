@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 10px;
+}
+
+.code {
+    height: 400px;
+}
+
+.va-m {
+    vertical-align: middle;
+}
+
+.code-example {
+    font-family: monospace;
+}
+
+.code-example {
+    margin: 5px;
+}
+
+.quantox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    z-index: 5;
+}

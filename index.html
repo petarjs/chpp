@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ћ плус плус</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Primary Meta Tags -->
+    <title>Ћ Плус Плус - Програмски језик на ћирилици</title>
+    <meta name="title" content="Ћ Плус Плус - Програмски језик на ћирилици">
+    <meta name="description" content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quantox.com/">
+    <meta property="og:title" content="Ћ Плус Плус - Програмски језик на ћирилици">
+    <meta property="og:description" content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!">
+    <meta property="og:image" content="./preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://quantox.com/">
+    <meta property="twitter:title" content="Ћ Плус Плус - Програмски језик на ћирилици">
+    <meta property="twitter:description" content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!">
+    <meta property="twitter:image" content="./preview.png">
+</head>
+<body>
+    <section class="hero is-success">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    <img src="./images/logo.png" alt="" width="50" class="va-m">
+                    плус плус <span class="tag is-white">v0.2.64</span>
+                </h1>
+                <h2 class="subtitle">
+                    <span class="icon va-m">
+                        <i class="material-icons">code</i>
+                    </span>&nbsp;
+                    Коначно, програмски језик на српском, па још и на ћирилици!
+                    <span class="icon va-m">
+                        <i class="material-icons">code</i>
+                    </span>&nbsp;
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <div class="container is-fluid">
+        <div class="columns">
+            <div class="column">
+                <h4 class="title is-size-5">
+                    <span class="icon va-m">
+                        <i class="material-icons">assignment</i>
+                    </span>&nbsp;
+                    Примери
+                </h4>
+                <button class="button is-info js-code-example code-example" data-target="basics">Основе</button>
+                <button class="button is-info js-code-example code-example" data-target="classes">Класе</button>
+                <button class="button is-info js-code-example code-example" data-target="fibonacci">Фибоначијев низ</button>
+                <button class="button is-info js-code-example code-example" data-target="bubbleSort">Сортирање</button>
+                <button class="button is-info js-code-example code-example" data-target="sumMatrixDiagonal">Сумирање дијагонале матрице</button>
+            </div>
+            <div class="column is-two-fifths">
+                <div class="columns">
+                    <div class="column">
+                        <button class="js-execute button is-success">
+                            <span class="icon">
+                                <i class="material-icons">play_arrow</i>
+                            </span>&nbsp;
+                            Изврши код
+                        </button>
+                    </div>
+                </div>
+
+                <div class="js-code code" id="editor"></div>
+            </div>
+            <div class="column is-two-fifths">
+                <span class="icon va-m">
+                    <i class="material-icons">assessment</i>
+                </span>&nbsp;
+                <strong>Резултат</strong>
+                <div class="js-output"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <section class="is-hidden-mobile">
+        <br>
+        <br>
+        <br>
+    
+        <h2 class="title is-size-3 has-text-centered">Ћ Плус Плус Статистике</h2>
+    
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+                <div>
+                <p class="heading">Јутјуб Туторијала</p>
+                <p class="title">0</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Блог постова</p>
+                    <p class="title">0</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Број програмера</p>
+                    <p class="title">2.5</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                <p class="heading">Звездица на GitHub-у</p>
+                <p class="title">0</p>
+                </div>
+            </div>
+        </nav>
+    
+        <br>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- <section>
+        <h2 class="title is-size-3 has-text-centered">Сведочења</h2>
+
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="./images/t1.png" alt="Сведочење 1">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <p class="title is-6">Петар</p>
+                            <p class="subtitle is-6">Фронт Енд Програмер</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Ово сам чекао од кадa знам за себе. Хвала што сте ми испунили програмерски сан!
+                            <br>
+                            <time datetime="2019-08-13">13 Авг. 2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="./images/t2.jpg" alt="Сведочење 1">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <p class="title is-6">Иван</p>
+                            <p class="subtitle is-6">Бек Енд Програмер</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Ћ Плус Плус ми даје специјалан осећај, као да сам се вратио у трећи разред основне школе.
+                            <br>
+                            <time datetime="2019-08-13">12 Авг. 2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <div class="container is-fluid">
+            <br>
+            <h1 class="title is-size-3">
+                <span class="icon">
+                    <i class="material-icons">file_copy</i>
+                </span>&nbsp;
+                Документација
+            </h1>
+
+            <div class="content">
+                <p>Ћ Плус Плус је програмски језик на ћирилици. Настао је као резултат научних истраживања током дугог низа година. У позадини користи JavaScript.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container is-fluid">
+            <br>
+            <h1 class="title is-size-4">Синтакса</h1>
+            
+            
+            <div class="content">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Функције</h1>
+                        <p>
+                            Функције у Ћ Плус Плус програмском језику се дефинишу коришћењем кључне речи
+                            <code>функција</code>. Кроз овај контрукт језика можемо да дефинишемо логички
+                            груписане комаде функционалности које можемо касније позивати из других делова кода.
+                            Пожељно је да свака функција на крају садржи кључну реч <code>врати</code>, која
+                            служи за враћање вредности позивајућјој функцији.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+функција сабери (број1, број2) {
+    врати број1 + број2
+}
+
+сабери(1, 2)
+                        </pre>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Променљиве</h1>
+                        <p>
+                            Променљиве можемо дефинисати као константне (непроменљиве) или обичне (променљиве).
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+дај да број буде 1
+константа БРОЈ_ПОПИЈЕНИХ_КАФА добија вредност 8
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Алтернација</h1>
+                        <p>
+                            Ћ Плус Плус подржава класичну <code>ако</code> / <code>у супрутном</code> конструкцију контроле тока програма.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+ако (1 мање од 2) {
+    испиши("тачно")
+} у супрутном {
+    испиши("налазимо се у обрнутом универзуму")
+}
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Петље</h1>
+                        <p>
+                            Постоји неколико начина да поновимо део кода више пута. То можемо урадити кроз
+                            <code>док</code> или <code>за</code> петљу.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+док (услов није тачан) {
+    испиши(”нетачно”)
+}
+
+за (дај да бројач буде 0; бројач мањи од 3; бројач повећај за 1) {
+    испиши(бројач)
+}
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Типови података</h1>
+                        <p>
+                            Ћ Плус Плус има подршку за све најпопуларније типове података.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+дај да омињенаБоја буде ”плава”
+константа ВОЛИ_КАФУ добија вредност тачно
+константа ЈЕ_ТРЕНУТНО_ЗИМА добија вредност нетачно
+дај да мојБрој буде 23
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Рад са низовима</h1>
+                        <p>
+                            Рад са низовима је једноставан. Ђ Плус Плус подржава све
+                            неопходне операције за рад са низовима података.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+дај да мојНиз буде Низ(20)
+испиши(мојНиз.дужина)
+
+дај да фибоначијевНиз буде [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+дај да првихПет буде фибоначијевНиз.процеди(број => број мањи од 8)
+првихПет.заСваки(број => испиши(број))
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Класе и наслеђивање</h1>
+                        <p>
+                            Ћ Плус Плус је примарно објектно-оријентисани језик, и као такав пружа првокласну подршку за класе и наслеђивање.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+класа Пиће {
+    конструктор () {
+        ово.назив = ''
+    }
+}
+
+класа Кафа наслеђује Пиће {
+    конструктор () {
+        ово.назив = 'Кафа'
+    }
+
+    попиј () {
+        испиши('Ммммм... кафа')
+    }
+}
+
+дај да мојаКафа буде нова Кафа()
+мојаКафа.попиј()
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Асинхроност</h1>
+                        <p>
+                            Ћ Плус Плус је асинхрони језик, и подржава асинхрони / сачекај модел, слично другим модерним језицима као што су JavaScript и C#.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+
+функција одспавај (бројМилисекунди) {
+    врати ново Обећање((испуни) => {
+        одложи(() => {
+            испуни()
+        }, бројМилисекунди)
+    })
+}
+асинхрона функција израчунајНешто() {
+    сачекај одспавај(2000)
+    врати 3 пута 3
+}
+
+израчунајНешто()
+    .онда(резултат => испиши(резултат))
+
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Обећања</h1>
+                        <p>
+                            Ћ Плус Плус подржава концепт Обећања. Обећања омогућују асинхроно извршавање кода без блокирања
+                            главне нити.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+дај да мојеОбећање буде ново Обећање((испуни, прекрши) => {
+    одложи(() => {
+        испуни()
+    }, 1000)
+})
+
+мојеОбећање
+    .онда(() => испиши('Обећање испуњенно'))
+    .ухвати(грешка => испиши(грешка))
+
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Рад са грешкама (Изузеци)</h1>
+                        <p>
+                            Рад са грешкама је јако једноставан. Коришћењем пробај / ухвати механизма,
+                            у могућности смо да ухватимо грешку када се деси и одлучимо шта ће се десити
+                            са њом. На овај начин можемо да контролишемо ток програма.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+пробај {
+    баци нову Грешку('Ох, не! Десила се грешка!')
+} ухвати (грешка) {
+    испиши(грешка)
+}
+
+                        </pre>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-size-5">Стандардна библиотека</h1>
+                        <p>
+                            Ћ Плус Плус садржи доста могућности које пружа његова Стандардна Библиотека.
+                            На пример, можемо добити насумичан број, или довући податке са удаљеног сервера.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-size-5">Пример</h1>
+                        <pre class="code-example">
+асинхрона функција довуциГугл() {
+    дај да путањаУдаљеногСервера буде 'https://google.com'
+    дај да одговор буде сачекај дохвати(путањаУдаљеногСервера)
+    врати одговор
+}
+
+дај да нештоНасумично буде Математика.насумично()
+испиши(нештоНасумично)
+
+                        </pre>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                © 2019. <strong>Ћ плус плус</strong> <a href="https://quantox.com">Quantox Technology</a>.
+            </p>
+        </div>
+    </footer>
+
+    <div class="quantox">
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                        <img src="./images/q.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Quantox Technology</p>
+                        <p class="subtitle is-6">
+                            <a href="https://quantox.com">https://quantox.com</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="content">
+                    Tražimo hrabre / odvažne / iskusne / ćirilične JavaScript i PHP programere.
+                    <br>
+                    <br>
+                    <a target="_blank" class="button is-success" href="https://quantox.com/careers">Prijavi se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js"></script>
+    <script src="./examples.js"></script>
+    <script src="./engine.js"></script>
+    <script>
+        let editor = ace.edit('editor', {
+            selectionStyle: 'text'
+        })
+
+        const $ = document.querySelector.bind(document)
+        let $code = $('.js-code')
+        let $execute = $('.js-execute')
+        let $output = $('.js-output')
+
+        editor.setValue(window.examples.fibonacci, -1)
+        editor.clearSelection()
+
+        $execute.addEventListener('click', e => {
+            let code = editor.getValue()
+
+            let output = window.execute(code)
+
+            $output.innerText = output
+        })
+
+        ;[...document.querySelectorAll('.js-code-example')].forEach($example => {
+            $example.addEventListener('click', e => {
+                editor.setValue(window.examples[e.target.dataset.target], -1)
+                editor.clearSelection()
+            })
+        })
+    </script>
+</body>
+</html>
