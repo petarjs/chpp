@@ -28,3 +28,9 @@ body {
     width: 350px;
     z-index: 5;
 }
+
+@media screen and (max-width: 600px) {
+    .footer {
+        margin-bottom: 200px;
+    }
+}
