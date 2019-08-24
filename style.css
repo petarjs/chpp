@@ -29,6 +29,14 @@ body {
     z-index: 5;
 }
 
+@media screen and (max-width: 320px) {
+    .quantox {
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .footer {
         margin-bottom: 200px;
