@@ -64,9 +64,27 @@ let keywordMap = {
     'док је': 'while',
     'ако је': 'if',
     'ако': 'if',
-    'у супрутном': 'else',
+    'у супротном': 'else',
     'или': '||',
     'и': '&&',
+    'ако је инстанца': 'instanceof',
+    'ако је тип': 'typeof',
+    'стани': 'break',
+    'кочи': 'break',
+    'случај': 'case',
+    'настави': 'continue',
+    'шта се покварило': 'debugger',
+    'подразумевано': 'default',
+    'обриши': 'delete',
+    'ради': 'do',
+    'коначно': 'finally',
+    'напокон': 'finally',
+    'пребаци': 'switch',
+    'подај': 'var',
+    'изнедефиниши': 'void',
+    'извези': 'export',
+    'увези': 'import',
+    'у': 'in',
 }
 
 function execute(code) {
@@ -79,6 +97,8 @@ function execute(code) {
                 `$1${keywordMap[keyword]}$2`
             )
     }, code)
+
+    console.log(newCode)
 
     try {
         let result = eval(newCode)
