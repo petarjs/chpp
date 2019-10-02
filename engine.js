@@ -98,8 +98,6 @@ function execute(code) {
             )
     }, code)
 
-    console.log(newCode)
-
     try {
         let result = eval(newCode)
         return result
